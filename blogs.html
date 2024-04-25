@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 30px;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        article {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            color: #666;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+.button{
+    background-color: transparent;
+    color: var(--secondary-text-center);
+    padding: 0px 50px;
+    border-radius: 4px;
+    margin-top: 10px;
+    padding: 12px;
+}
+.button:hover{
+    cursor:pointer;
+    opacity:.85;
+    scale:1.3;
+    color: rgb(24, 26, 155);
+}
+.btn-primary{
+    background-color:rgb(23, 180, 164);
+    color: var(--secondary-text-center);
+    padding: 4px ;
+    border-radius: 4px;
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <!-- <h1>Read My Blogs</h1> -->
+        <span id="element"></span>
+    </header>
+
+    <section>
+        <article>
+            <h2>What's in the Head of a HTML File?</h2>
+            <p>Do you know the tags which is inside the head elements, if you want to know anout the tags, its attributes and what it means then click on the button to read about it.This blog explain the head element covering meta element, title element and other element in brief.
+            </p>
+            <!-- <a href="#read-more">Read more...</a> -->
+            <button class="button btn-primary" onclick="window.location.href='https://www.w3schools.com/html/default.asp'">Read More</button>
+        </article>
+
+        <article>
+            <h2>What's in the Head of a CSS File?</h2>
+            <p>Internal CSS is placed inside a (style) element, which goes inside the (head)of the HTML document. External CSS exists in a separate file called an external stylesheet, and requires a (link) element placed inside the head section of an HTML file.</p>
+            <!-- <a href="#read-more">Read more...</a> -->
+            <button class="button btn-primary" onclick="window.location.href='https://www.w3schools.com/css/default.asp'">Read More</button>
+        </article>
+    </section>
+
+    <footer>
+        &copy; 2024 Your Blog Page
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<script>
+    var typed = new Typed('#element', {
+        strings: ['Welcome to my blogs'],
+        typeSpeed: 50,
+    });
+</script>
+
+</body>
+
+</html>

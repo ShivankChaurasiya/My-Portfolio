@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home | Shivank Chaurasiya</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="flex items-center header">
+    <div class="flex item-center flex-grow gap-16">
+        <div class="logo-container">
+        <img class="logo" src="../assets/erp pic.png" alt="logo"/>
+    </div>
+        <h1>Shivank's Portfolio</h1>
+    </div>
+    <nav>
+        <ul class="flex items-center list gap-16">
+            <li>
+                <a class="link" href="Home.html">Home</a>
+            </li>
+            <li>
+                <a class="link" href="project.html">Projects</a>
+            </li>
+            <li>
+                <a class="link" href="blogs.html">Blogs</a>
+            </li>
+            <li>
+                <a class="link" href="contact.html">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div class="flex flex-col justify-center items-center py-32">
+        <img  class="hero-img" src="../assets/logo.png"/>
+        <!-- <h2>Shivank Chaurasiya is a Web Developer</h2> -->
+        <span id="element"></span>
+    </div>
+    <div class="bg-gray flex flex-col items-center justify-center py-32 content-block">
+        <h2 >About Me</h2>
+        <p class="pt-10">I am a third-year Kanpur student studying computer science and engineering, with a strong passion for full
+            stack development. competent with both front-end and back-end technologies, having worked with Python,
+            JavaScript, React.js, and Node.js firsthand. produced dynamic web apps with success and shown a high
+            aptitude for analysis and problem-solving. want to land a demanding job opportunity so I can use my
+            education and make a major contribution to the growth of an innovative business.</p>
+    </div>
+
+    <div class="bg-gray flex flex-col items-center justify-center py-32">
+        <h2 class="flex justify-center">Explore my work</h2>
+        <p class="pt-10 section">
+            I have built some wonderful projects which you can play around and review my source as well. Click on the button to see my projects hosted online.
+        </p>
+            <!-- <button class="button btn-primary">Browse Projects</button> -->
+            <button class="button btn-primary" onclick="window.location.href='project.html'">Browse Projects</button>
+
+    </div>
+
+    <div class="bg-gray flex flex-col items-center justify-center py-32">
+        <h2 class="flex justify-center">Read my blogs</h2>
+        <p class="pt-10 section">
+            I have written some blogs which can enjoy reading. Click on the button to read my blogs.
+        </p>
+            <!-- <button class="button btn-primary">Browse Blogs</button> -->
+            <button class="button btn-primary" onclick="window.location.href='blogs.html'">Read My Blogs</button>
+
+    </div>
+</main>
+<footer class="footer flex justify-content">
+    <div>
+        <p class="pt-10">Connect with me</p>
+    </div>
+    <div class="pt-10">
+        <a href="https://github.com/ShivankChaurasiya" target="_blank">
+    <img class="social-img" src="../assets/github.png" alt="github"/>
+</a>
+<a href="https://www.linkedin.com/in/shivank-chaurasiya-236a20229/">
+    <img class="social-img" src="../assets/linkdin.webp" alt="linkdin" />
+</a>
+<a href="https://twitter.com/ShivankCha50203">
+    <img class="social-img" src="../assets/twitter.png" alt="twitter" />
+</a>
+</div>
+<div class="footer-rights">
+    Copyright &#169; www.shivanksportfolio.com | All right reserverd
+</footer>
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<script>
+    var typed = new Typed('#element', {
+        strings: ['Welcome to Shivank Chaurasiya Portfolio','Shivank Chaurasiya is a Web Developer','Thank You For Visiting My Portfolio'],
+        typeSpeed: 50,
+    });
+</script>
+</body>
+</html>
